@@ -10,5 +10,11 @@ namespace NDD.NFSe.Training.Tests.DateFormat
         {
             new Iso8601WithPtBtCultureShouldConvert().ExecuteTest();
         }
+
+        [TestMethod]
+        public void TestIso8601WithEnUsCultureShouldConvert()
+        {
+            new Iso8601WithEnUsCultureShouldConvert().ExecuteTest();
+        }
     }
 }
