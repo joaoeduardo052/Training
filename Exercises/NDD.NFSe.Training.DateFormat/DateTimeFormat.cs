@@ -16,7 +16,7 @@ namespace NDD.NFSe.Training.DateFormat
             return null;
         }
 
-        //Esse método recebe uma data no formato americano (MM/dd/yyyy HH:mm:ss) e deve retornar um DateTime
+        //Esse método recebe uma data no formato americano (MM/DD/AAAA HH:mm:ss) e deve retornar um DateTime
         public DateTime LoadFromEnglishFormat(string dateTime)
         {
             return DateTime.MinValue;
