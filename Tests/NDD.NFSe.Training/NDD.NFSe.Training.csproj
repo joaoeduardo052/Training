@@ -71,8 +71,12 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tests\DateFormat\DateFormatBase.cs" />
+    <Compile Include="Tests\DateFormat\FormatPtBrWithEnUsCultureShouldConvert.cs" />
+    <Compile Include="Tests\DateFormat\FormatPtBrWithPtBrCultureShouldConvert.cs" />
     <Compile Include="Tests\DateFormat\Iso8601WithEnUsCultureShouldConvert.cs" />
     <Compile Include="Tests\DateFormat\Iso8601WithPtBtCultureShouldConvert.cs" />
+    <Compile Include="Tests\DateFormat\LoadFromEnglishFormatWithEnUsCultureShouldConvert.cs" />
+    <Compile Include="Tests\DateFormat\LoadFromEnglishFormatWithPtBrCultureShouldConvert.cs" />
     <Compile Include="Tests\DateFormat\TestDateFormat.cs" />
     <Compile Include="Tests\TestBase.cs" />
   </ItemGroup>
