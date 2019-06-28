@@ -5,7 +5,7 @@ using FluentAssertions;
 
 namespace NDD.NFSe.Training.Tests.DateFormat
 {
-    public class Iso8601WithPtBtCultureShouldConvert : DateFormatBase
+    class Iso8601WithEnUsCultureShouldConvert : DateFormatBase
     {
         private string ValueInput1;
         private string ValueResult1;
@@ -23,7 +23,7 @@ namespace NDD.NFSe.Training.Tests.DateFormat
         {
             base.Initialize();
 
-            Thread.CurrentThread.CurrentCulture = CultureInfo.GetCultureInfo("pt-BR");
+            Thread.CurrentThread.CurrentCulture = CultureInfo.GetCultureInfo("en-US");
 
             ValueInput1 = "15/04/2019 16:37:15";
             ValueInput2 = "06-08-2019 10:21:01";
