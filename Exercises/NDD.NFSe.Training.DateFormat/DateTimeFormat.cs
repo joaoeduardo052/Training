@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace NDD.NFSe.Training.DateFormat
 {
@@ -7,19 +8,28 @@ namespace NDD.NFSe.Training.DateFormat
         //Esse método recebe uma string com um datetime e deve retornar essa mesma data no padrão ISO 8601 (AAAA-MM-DDTHH:mm:ss)
         public string FormatIso8601(string dateTime)
         {
-            return null;
+            CultureInfo Cultura = new CultureInfo("pt-BR");
+            var data = DateTime.Parse(dateTime, Cultura).ToString("yyyy-MM-ddTHH:mm:ss");
+
+            return data;
         }
 
-        //Esse método recebe uma string com um datetime e deve retornar essa mesma data no padrão pt-BR (DD/MM/AAAA HH:mm:ss )
+        //Esse método recebe uma string com um datetime e deve retornar essa mesma data no padrão pt-BR (DD/MM/AAAA HH:mm:ss)
         public string FormatPtBr(string dateTime)
         {
-            return null;
+            CultureInfo Cultura = new CultureInfo("pt-BR");
+            var data = DateTime.Parse(dateTime, Cultura).ToString("dd/MM/yyyy HH:mm:ss");
+
+            return data;
         }
 
         //Esse método recebe uma data no formato americano (MM/DD/AAAA HH:mm:ss) e deve retornar um DateTime
         public DateTime LoadFromEnglishFormat(string dateTime)
         {
-            return DateTime.MinValue;
+            CultureInfo Cultura = new CultureInfo("en-US");
+            var data = DateTime.Parse(dateTime, Cultura);
+
+            return data;
         }
     }
 }
